@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <div className="w-full h-screen bg-gradient-to-b from-black to-gray-600">
       <div className="max-w-screen-lg mx-auto flex flex-col md:flex-row justify-center items-center h-full px-4">
-        <div className="flex flex-col justify-center items-center h-full">
+        <div className="flex flex-col justify-center items-center h-full ">
           <h2 className="mb-3 text-4xl sm:text-7xl font-bold text-white">
             {/* I am a {text} */}I'm a{" "}
             {/* <span style={{ fontSize: "1.3em", color: "darkseagreen" }}>
@@ -51,7 +51,7 @@ const Home = () => {
           <img
             src={HeroImage}
             alt="Profile image"
-            className="rounded-2xl mx-auto w-2/3 md:w-full "
+            className="rounded-s-full mx-auto w-2/3 md:w-full "
           />
         </div>
       </div>
