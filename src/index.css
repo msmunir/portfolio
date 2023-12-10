@@ -13,4 +13,7 @@
   html {
     font-family: "Ubuntu", sans-serif;
   }
+  body {
+    background-color: #1a1414;
+  }
 }

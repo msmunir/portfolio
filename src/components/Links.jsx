@@ -46,9 +46,9 @@ export default function Links() {
   ];
 
   return (
-    // <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
     // links always visible
-    <div className="flex flex-col top-[45%] left-0 fixed lg:top-[33%]">
+    // <div className="flex flex-col top-[45%] left-0 fixed lg:top-[33%]">
+    <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
       <ul>
         {links.map((link) => (
           <li

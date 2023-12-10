@@ -2,7 +2,6 @@
 // import { Typewriter } from "react-simple-typewriter";
 import { FaArrowRight } from "react-icons/fa";
 import HeroImage from "../assets/images/smunir.png";
-// import { Link } from "react-router-dom";
 
 const Home = () => {
   // Changing text after 3sec
