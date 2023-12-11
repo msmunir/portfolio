@@ -28,12 +28,12 @@ const Home = () => {
               <span style={{ color: "darkseagreen" }}>
                 <Typewriter
                   words={["Developer", "Coder"]}
-                  loop={2}
+                  loop={Infinity}
                   cursor
                   cursorStyle="_"
                   typeSpeed={70}
                   deleteSpeed={50}
-                  delaySpeed={1000}
+                  delaySpeed={2000}
                 />
               </span>
             </h2>
