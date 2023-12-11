@@ -1,4 +1,5 @@
 import About from "./components/About";
+import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Home from "./components/Home";
 import Links from "./components/Links";
@@ -14,6 +15,7 @@ export default function App() {
       <Links />
       <Portfolio />
       <Experience />
+      <Contact />
     </div>
   );
 }

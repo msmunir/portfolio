@@ -48,12 +48,12 @@ export default function Experience() {
       title: "TailwindCSS",
       style: "shadow-blue-500",
     },
-    // {
-    //   id: 7,
-    //   src: sass,
-    //   title: "SaaS",
-    //   style: "shadow-pink-500",
-    // },
+    {
+      id: 7,
+      src: sass,
+      title: "SaaS",
+      style: "shadow-pink-500",
+    },
     {
       id: 8,
       src: nodeJS,
@@ -76,9 +76,9 @@ export default function Experience() {
   return (
     <div
       name="experience"
-      className="bg-gradient-to-b from-gray-800 to-black  w-full h-screen border border-yellow-400"
+      className="bg-gradient-to-b from-gray-800 to-black  w-full min-h-full md:h-screen"
     >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center items-center w-full h-full text-white border border-red-400">
+      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center items-center w-full h-full text-white">
         <div>
           <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
             Experience
@@ -87,11 +87,11 @@ export default function Experience() {
             I have experience with working this technologies
           </p>
         </div>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 sm:px-0">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-2 px-12 sm:px-0">
           {techs.map((courses) => (
             <div
               key={courses.id}
-              className={`card w-52 py-2 shadow-md hover:scale-105 duration-300 rounded-lg  flex justify-center items-center flex-col ${courses.style}`}
+              className={`card py-2 shadow-md hover:scale-105 duration-300 rounded-lg  flex justify-center items-center flex-col ${courses.style}`}
             >
               <img src={courses.src} alt="" className="w-20 mx-auto" />
               <p className="mt-4 text-center">{courses.title}</p>

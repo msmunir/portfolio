@@ -40,36 +40,24 @@ export default function Portfolio() {
           <p className="py-6">Check out some of my work here</p>
         </div>
 
-        <div
-          className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0"
-          style={{ border: "1px solid hotpink" }}
-        >
+        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 px-12 py-2 sm:px-0">
           {projects.map((item) => (
-            <div className="card w-64" key={item.id}>
-              <div
-                className="shadow-md shadow-gray-600 rounded-lg "
-                style={{ border: "1px solid hotpink" }}
-              >
-                <img
-                  src={item.src}
-                  alt="smunir"
-                  className="rounded-md hover:scale-105 duration-200 h-50 object-cover"
-                />
-              </div>
-              <div
-                className="flex items-center justify-center"
-                style={{ border: "1px solid hotpink" }}
-              >
-                <button
-                  className="w-1/2 px-3 py-3 m-4 hover:scale-105 duration-300"
-                  style={{ border: "1px solid hotpink" }}
-                >
+            <div
+              key={item.id}
+              className="card shadow-md shadow-gray-600 rounded-lg "
+              // style={{ border: "1px solid hotpink" }}
+            >
+              <img
+                src={item.src}
+                alt="smunir"
+                className="rounded-md hover:scale-105 duration-200 h-50 object-cover"
+              />
+
+              <div className="flex items-center justify-center">
+                <button className="w-1/2 px-3 py-3 m-4 hover:scale-105 duration-300">
                   Demo
                 </button>
-                <button
-                  className="w-1/2 px-3 py-3 m-4 hover:scale-105 duration-300"
-                  style={{ border: "1px solid hotpink" }}
-                >
+                <button className="w-1/2 px-3 py-3 m-4 hover:scale-105 duration-300">
                   Code
                 </button>
               </div>
